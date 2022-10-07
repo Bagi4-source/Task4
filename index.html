@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самый крутой сайт!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="content mx-auto p-2 row">
+        <div class="logo-img col-auto align-self-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Android_O_Preview_Logo.png/1024px-Android_O_Preview_Logo.png"
+                 alt="Логотип" height="80">
+        </div>
+        <div class="logo-name col align-self-center">
+            <span>Название</span>
+        </div>
+    </div>
+</header>
+<nav class="content mx-auto p-2">
+    <div class="nav-items row">
+        <div class="nav-item col-sm"><a href="#">Главная</a></div>
+        <div class="nav-item col-sm"><a href="#links">Ссылки</a></div>
+        <div class="nav-item col-sm"><a href="#footer">Подвал</a></div>
+    </div>
+</nav>
+<div id="links" class="content mx-auto p-2">
+    <div>
+        <h3>Список должен содержать следующие гиперссылки:</h3>
+        <ol>
+            <li><a href="www.kubsu.ru">абсолютную гиперссылку на главную страницу сайта example.com;</a></li>
+            <li><a href="https://www.kubsu.ru/">абсолютную на главную сайта example.com в протоколе https;</a></li>
+            <li><a href="ftp://www.kubsu.ru/icon.png">ссылку на файл на сервере FTP без авторизации;</a></li>
+            <li><a href="ftp://user:pass@www.kubsu.ru/icon.png">ссылку на файл на сервере FTP с авторизацией;</a></li>
+            <li><a href="https://www.kubsu.ru/ru/university#block-block-9">ссылку на фрагмент страницы некоторого
+                сайта;</a></li>
+            <li><a href="#form">ссылку на фрагмент текущей страницы;</a></li>
+            <li><a href="https://example.com/list?page=10&reg=23">ссылку с двумя параметрами в URL;</a></li>
+            <li>
+                <p>список ссылок основной навигации сайта с подписями title;</p>
+                <ul>
+                    <li><a href="https://www.kubsu.ru/ru/university">Университет</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/education">Образование</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/science">Наука и инновации</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/abiturient">Абитуриентам</a></li>
+                    <li><a href="https://www.kubsu.ru/ru/studlife">Студентам</a></li>
+                </ul>
+            </li>
+            <li><a>ссылку без href;</a></li>
+            <li><a href="">ссылку с пустым href;</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="nofollow">ссылку, по которой запрещен переход
+                поисковикам;</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><!--noindex-->запрещенную для индексации
+                поисковиками;<!--/noindex--></a></li>
+            <li><p>контекстную <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ссылку</a> в тексте абзаца;</p>
+            </li>
+            <li>
+                <p></p>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"
+                        alt="HTML5" width="200"></a>
+            </li>
+            <li>
+                <p>ссылки из прямоугольных и круглых областей картинки (HTML-тег map);</p>
+                <img src="https://megabook.ru/stream/mediapreview?Key=Фигура%20(геометрические%20фигуры)&Width=654&Height=654"
+                     width="200" alt="Geoms" usemap="#urls">
+                <map name="urls">
+                    <area shape="rect" coords="20,20,80,80" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                          alt="rect">
+                    <area shape="circle" coords="142,84,38" href="https://www.kubsu.ru/ru/education" alt="circle">
+                    <area shape="poly" coords="38,160,78,98,120,160" href="https://www.kubsu.ru/ru/science"
+                          alt="triangle">
+                </map>
+            </li>
+            <li><a href="page">относительную на страницу в текущем каталоге;</a></li>
+            <li><a href="about/page">относительную на страницу в каталоге about;</a></li>
+            <li><a href="../page">относительную на страницу в каталоге уровнем выше текущего;</a></li>
+            <li><a href="../../page">относительную на страницу в каталоге двумя уровнями выше;</a></li>
+            <li><a href="/">сокращенную на главную;</a></li>
+            <li><a href="/page">сокращенную ссылку на внутреннюю.</a></li>
+        </ol>
+    </div>
+    <table class="table">
+        <thead>
+        <tr>
+            <td>Столбец 1</td>
+            <td>Столбец 2</td>
+            <td>Столбец 3</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="2">1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td colspan="3">1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="2">2</td>
+        </tr>
+        </tbody>
+    </table>
 
+    <div id="form">
+        <h3>Форма должна содержать следующие поля:</h3>
+        <div style="width: 250px;">
+            <form>
+                <div class="field name my-2">
+                    <label for="name">Имя:</label><br>
+                    <input type="text" name="name" id="name" placeholder="Имя">
+                </div>
+                <div class="field email my-2">
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="field bday my-2">
+                    <label for="bday">Дата рождения:</label><br>
+                    <input type="date" name="bday" id="bday">
+                </div>
+
+                <div class="field gender my-2">
+                    <label>Пол:</label>
+                    <div>
+                        <label><input type="radio" value="male" name="gender">Мужской</label>
+                        <label><input type="radio" value="female" name="gender">Женский</label>
+                    </div>
+                </div>
+                <div class="field count my-2">
+                    <label>Число конечностей:</label>
+                    <div>
+                        <label><input type="radio" value="0" name="count">0</label>
+                        <label><input type="radio" value="1" name="count">1</label>
+                        <label><input type="radio" value="2" name="count">2</label>
+                        <label><input type="radio" value="3" name="count">3</label>
+                        <label><input type="radio" value="4" name="count">4</label>
+                    </div>
+                </div>
+                <div class="field superpower my-2">
+                    <label for="superpower">Сверхспособности:</label>
+                    <select name="superpower" id="superpower" multiple="multiple">
+                        <option value="бессмертие">бессмертие</option>
+                        <option value="прохождение сквозь стены">прохождение сквозь стены</option>
+                        <option value="левитация">левитация</option>
+                    </select>
+                </div>
+                <div class="field biography my-2">
+                    <label for="biography">Биография:</label>
+                    <textarea name="biography" id="biography" cols="30" rows="10"></textarea>
+                </div>
+                <div class="field agreement my-2">
+                    <label for="agreement">С контрактом ознакомлен (а):</label>
+                    <input type="checkbox" name="agreement" id="agreement">
+                </div>
+                <input id="submit" type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+</div>
+<footer id="footer" class="row">
+    <div class="copyright mx-auto col align-self-end">®Герман Багдасарян 2022</div>
+</footer>
+</body>
+</html>
